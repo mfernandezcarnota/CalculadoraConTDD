@@ -45,5 +45,14 @@ public class Calculadora {
 							resultado = calcu.restar(operando1, operando2);
 							System.out.println("El resultado de la resta es: " + resultado);
 							break;
+							
+							case 3:
+							System.out.println("Introduzca el primer valor: ");
+							operando1 = entrada.nextDouble();
+							System.out.println("Introduzca el segundo valor: ");
+							operando2 = entrada.nextDouble();
+							resultado = calcu.multiplicar(operando1, operando2);
+							System.out.println("El resultado de la multiplicación es: " + resultado);
+							break;
 
 }
