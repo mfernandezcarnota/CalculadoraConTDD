@@ -27,5 +27,14 @@ public class Calculadora {
 					break;
 				} else {
 					switch (opcion) {
+							
+							case 1:
+						System.out.println("Introduzca el primer valor: ");
+						operando1 = entrada.nextDouble();
+						System.out.println("Introduzca el segundo valor: ");
+						operando2 = entrada.nextDouble();
+						resultado = calcu.sumar(operando1, operando2);
+						System.out.println("El resultado de la suma es: " + resultado);
+						break;
 
 }
