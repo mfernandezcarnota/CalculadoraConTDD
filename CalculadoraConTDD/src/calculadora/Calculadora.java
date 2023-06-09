@@ -70,5 +70,23 @@ public class Calculadora {
 							resultado = calcu.raiz(radicando);
 							System.out.println("El resultado de la división es: " + resultado);
 							break;
+							
+							case 6:
+							System.out.println("Introduzca el valor del exponente: ");
+							exponente = entrada.nextDouble();
+							resultado = calcu.raiz(exponente);
+							System.out.println("El resultado del exponente con base e, es: " + resultado);
+							break;
+
+							default:
+							System.out.println("La opción que ha elegido no es válida, por favor, vuelva"
+									+ " a intentar.");
+							}
+				}
+			}
+		}
+		
+		
+	}
 
 }
