@@ -13,4 +13,10 @@ public class Metodos {
 		resultado = operando1 - operando2;
 		return resultado;
 	}
+	
+	public double multiplicar(double operando1, double operando2) {
+		double resultado = 0.000;
+		resultado = operando1 * operando2;
+		return resultado;
+	}
 }
