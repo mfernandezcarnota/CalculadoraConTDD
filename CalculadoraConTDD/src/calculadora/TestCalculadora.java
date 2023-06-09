@@ -114,5 +114,27 @@ public class TestCalculadora {
 		assertEquals("Resultado de la raíz cuadrada debería ser igual al valor esperado",
 				valor_esperado, resultado, 0.0000);
 	}
+	
+	@Test
+	public void potenciaBaseEDeberiaDevolverElValorEsperadoCuandoLosOperandosSonValidos() {
+		/* El nombre del metodo se divide en un parte con el nombre del metodo,
+		 * que es lo que se espera cuando el test es un exito,
+		 * cuando se debe producir ese exito
+		 */
+		
+		/*Paso 1: crear y configurar los objetos necesarios para ejecutar el test*/
+		double exponente = 2;
+		double valor_esperado = 7.387524;
+		
+		Metodos calcu = new Metodos();
+				
+		/*Ejecutar el metodo testeado*/
+		double resultado = calcu.potenciaBaseE(exponente);
+		System.out.println("El resultado de la prueba potenciaBaseE es: " + resultado +
+				" y el valor esperado es: " + valor_esperado);
+		/*Comprobar que el resultado obtenido es igual al resultado esperado por el test*/
+		assertEquals("Resultado de la potencia en base e debería ser igual al valor esperado",
+				valor_esperado, resultado, 0.0000);
+	}
 
 }
