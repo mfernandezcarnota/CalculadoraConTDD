@@ -69,5 +69,28 @@ public class TestCalculadora {
 		assertEquals("Resultado de la multiplicación debería ser igual al valor esperado",
 				valor_esperado, resultado, 0.0000);
 	}
+	
+	@Test
+	public void dividirDeberiaDevolverElValorEsperadoCuandoLosOperandosSonValidos() {
+		/* El nombre del metodo se divide en un parte con el nombre del metodo,
+		 * que es lo que se espera cuando el test es un exito,
+		 * cuando se debe producir ese exito
+		 */
+		
+		/*Paso 1: crear y configurar los objetos necesarios para ejecutar el test*/
+		double operando_1 = 15.45;
+		double operando_2 = 100;
+		double valor_esperado = 0.1545;
+		
+		Metodos calcu = new Metodos();
+				
+		/*Ejecutar el metodo testeado*/
+		double resultado = calcu.dividir(operando_1,operando_2);
+		System.out.println("El resultado de la prueba dividir es: " + resultado +
+				" y el valor esperado es: " + valor_esperado);
+		/*Comprobar que el resultado obtenido es igual al resultado esperado por el test*/
+		assertEquals("Resultado de la división debería ser igual al valor esperado",
+				valor_esperado, resultado, 0.0000);
+	}
 
 }
