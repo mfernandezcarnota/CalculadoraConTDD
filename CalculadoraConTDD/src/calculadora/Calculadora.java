@@ -63,5 +63,12 @@ public class Calculadora {
 							resultado = calcu.dividir(operando1, operando2);
 							System.out.println("El resultado de la división es: " + resultado);
 							break;
+							
+							case 5:
+							System.out.println("Introduzca el valor del radicando: ");
+							radicando = entrada.nextDouble();
+							resultado = calcu.raiz(radicando);
+							System.out.println("El resultado de la división es: " + resultado);
+							break;
 
 }
