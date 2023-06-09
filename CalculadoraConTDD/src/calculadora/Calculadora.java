@@ -2,8 +2,8 @@ package calculadora;
 
 public class Calculadora {
   
-      Metodos calcu = new Metodos();
-		  try (Scanner entrada = new Scanner(System.in)) {
+     			Metodos calcu = new Metodos();
+		  	try (Scanner entrada = new Scanner(System.in)) {
 			double operando1, operando2, radicando, exponente, resultado;
 			int opcion;
 			boolean op = true;
@@ -29,12 +29,21 @@ public class Calculadora {
 					switch (opcion) {
 							
 							case 1:
-						System.out.println("Introduzca el primer valor: ");
-						operando1 = entrada.nextDouble();
-						System.out.println("Introduzca el segundo valor: ");
-						operando2 = entrada.nextDouble();
-						resultado = calcu.sumar(operando1, operando2);
-						System.out.println("El resultado de la suma es: " + resultado);
-						break;
+							System.out.println("Introduzca el primer valor: ");
+							operando1 = entrada.nextDouble();
+							System.out.println("Introduzca el segundo valor: ");
+							operando2 = entrada.nextDouble();
+							resultado = calcu.sumar(operando1, operando2);
+							System.out.println("El resultado de la suma es: " + resultado);
+							break;
+							
+							case 2:
+							System.out.println("Introduzca el primer valor: ");
+							operando1 = entrada.nextDouble();
+							System.out.println("Introduzca el segundo valor: ");
+							operando2 = entrada.nextDouble();
+							resultado = calcu.restar(operando1, operando2);
+							System.out.println("El resultado de la resta es: " + resultado);
+							break;
 
 }
