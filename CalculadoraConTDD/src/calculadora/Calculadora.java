@@ -54,5 +54,14 @@ public class Calculadora {
 							resultado = calcu.multiplicar(operando1, operando2);
 							System.out.println("El resultado de la multiplicación es: " + resultado);
 							break;
+							
+							case 4:
+							System.out.println("Introduzca el primer valor: ");
+							operando1 = entrada.nextDouble();
+							System.out.println("Introduzca el segundo valor: ");
+							operando2 = entrada.nextDouble();
+							resultado = calcu.dividir(operando1, operando2);
+							System.out.println("El resultado de la división es: " + resultado);
+							break;
 
 }
