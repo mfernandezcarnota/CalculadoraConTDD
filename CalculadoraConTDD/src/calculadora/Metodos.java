@@ -36,4 +36,13 @@ public class Metodos {
 		} while ((t - raizCuadrada) != 0);
 		return raizCuadrada;
 	}
+	
+	public double potenciaBaseE(double exponente) {
+		double e = 2.718;
+		double resultado = e;
+		for (int i = 2; i <= exponente; i++) {
+			resultado = e * resultado;
+		}
+		return resultado;
+	}
 }
