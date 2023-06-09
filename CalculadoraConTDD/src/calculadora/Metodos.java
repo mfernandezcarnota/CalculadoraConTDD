@@ -26,4 +26,14 @@ public class Metodos {
 		return resultado;
 	}
 	
+	public double raiz(double radicando) {		
+		double t;
+		double raizCuadrada = radicando / 2;
+		
+		do {
+			t = raizCuadrada;
+			raizCuadrada = (t + (radicando / 2)) / 2;
+		} while ((t - raizCuadrada) != 0);
+		return raizCuadrada;
+	}
 }
