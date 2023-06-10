@@ -1,5 +1,7 @@
 package calculadora;
 
+import java.util.Scanner;
+
 public class Calculadora {
   
      			Metodos calcu = new Metodos();
